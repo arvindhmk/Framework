@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [loginSuite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="utility.listernerclass"/>
+  </listeners>
+  <test thread-count="5" name="loginTest(failed)">
+    <classes>
+      <class name="testcase.logintestcase">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="start"/>
+          <include name="readdata"/>
+          <include name="loginApp"/>
+        </methods>
+      </class> <!-- testcase.logintestcase -->
+    </classes>
+  </test> <!-- loginTest(failed) -->
+</suite> <!-- Failed suite [loginSuite] -->
