@@ -17,8 +17,7 @@ public class loginpageobjects extends baseclass
 //	{
 //		this.driver=pdriver;
 //	}
-//	
-	
+//		
 	@FindBy(id = "txtUsernamee")
 	public WebElement userName;
 	
@@ -27,7 +26,6 @@ public class loginpageobjects extends baseclass
 	
 	@FindBy(id = "btnLogin")
 	public WebElement submit;
-	
 	
 	public void logintoCRM(String usernameapp,String passwordapp)
 	{
