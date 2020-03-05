@@ -3,6 +3,34 @@
   <groupId>Frameworklearn</groupId>
   <artifactId>Frameworklearn</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+
+ <properties>
+    <maven.compiler.source>1.6</maven.compiler.source>
+    <maven.compiler.target>1.6</maven.compiler.target>
+  </properties>
+
+
+<build>
+<plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M4</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+          <systemPropertyVariables>
+          <executionBrowser>${browser}</executionBrowser>
+          </systemPropertyVariables>
+          
+        </configuration>
+      </plugin>
+</plugins>
+
+</build>
+
+
   
   
   <dependencies>
